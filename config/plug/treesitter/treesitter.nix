@@ -8,6 +8,6 @@
     };
     folding = true;
     nixvimInjections = true;
-    #grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
+    grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
 }
