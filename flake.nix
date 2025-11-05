@@ -26,9 +26,7 @@
           inherit pkgs;
           module = config;
           # You can use `extraSpecialArgs` to pass additional arguments to your module files
-          extraSpecialArgs = {
-            inherit self;
-          };
+          extraSpecialArgs = { inherit self; };
         };
       in
       {

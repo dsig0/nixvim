@@ -71,8 +71,12 @@ in
     (mkKeymap "n" "g#" "g#zzzv")
 
     # only jumps of more than 5 lines are added to the jumplist
-    (mkKeymapWithOpts "n" "k" "(v:count > 5 ? \"m'\" . v:count : \"\") . 'k'" { expr = true; })
-    (mkKeymapWithOpts "n" "j" "(v:count > 5 ? \"m'\" . v:count : \"\") . 'j'" { expr = true; })
+    (mkKeymapWithOpts "n" "k" "(v:count > 5 ? \"m'\" . v:count : \"\") . 'k'" {
+      expr = true;
+    })
+    (mkKeymapWithOpts "n" "j" "(v:count > 5 ? \"m'\" . v:count : \"\") . 'j'" {
+      expr = true;
+    })
 
     # vv enter visual block mode
     (mkKeymap "n" "vv" "<C-V>")
