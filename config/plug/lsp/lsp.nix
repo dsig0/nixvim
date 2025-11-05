@@ -23,10 +23,10 @@
             nixpkgs.expr = "import <nixpkgs> { }";
             options = {
               nixos = {
-                expr = "(builtins.getFlake \"/home/zenith/hyprnix\").nixosConfigurations.shadowblaze.options";
+                expr = "(builtins.getFlake \"/home/zenith/dotfiles\").nixosConfigurations.nixos.options";
               };
               home_manager = {
-                expr = "(builtins.getFlake \"/home/zenith/hyprnix\").homeConfigurations.shadowblaze.options";
+                expr = "(builtins.getFlake \"/home/zenith/dotfiles\").homeConfigurations.nixos.options";
               };
             };
           };
